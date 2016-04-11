@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/floralwhite">
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        >
+        <TextView
+            android:id="@+id/backTV"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:background="@drawable/tabck_selector"
+            android:text="返回"
+            android:textSize="18.0dip" />
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:background="@color/green"
+            android:text="维修合同签订"
+            android:textSize="22.0dip" />
+        <TextView
+            android:id="@+id/submitTV"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:background="@drawable/tabck_selector"
+            android:text="提交"
+            android:textSize="15.0dip" />
+
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/patrol_SV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="合同名称    "/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nameET"
+                    android:maxLines="1"
+                    style="@style/CommonEditText" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="合同类型    "/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/typeET"
+                    android:maxLines="1"
+                    style="@style/CommonEditText" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="签订部门    "/>
+
+                <EditText android:id="@+id/apartmentET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/CommonEditText"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="经办人编号"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/workerIdET"
+                    style="@style/CommonEditText"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="签约方        "/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/contractorET"
+                    style="@style/CommonEditText"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="签约金额￥"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/moneyET"
+                    style="@style/CommonEditText"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="合同内容    "/>
+
+                <EditText
+                    android:id="@+id/contentET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="true"
+                    android:inputType="textMultiLine"
+                    android:gravity="top"
+                    android:minLines="3"
+                    android:maxLines="5"
+                    android:scrollbars="vertical"
+                    style="@style/CommonEditText"
+                    android:background="@android:drawable/edit_text"
+                    >
+                </EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="备注            "/>
+
+                <EditText
+                    android:id="@+id/remarkET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="true"
+                    android:inputType="textMultiLine"
+                    android:gravity="top"
+                    android:minLines="3"
+                    android:maxLines="5"
+                    android:scrollbars="vertical"
+                    style="@style/CommonEditText"
+                    android:background="@android:drawable/edit_text"
+                    >
+                </EditText>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

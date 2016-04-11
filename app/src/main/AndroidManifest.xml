@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.legolas.activity">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--application的theme设置时可以决定全局的样式
+        但是会被activity中的theme所覆盖，当activity中不设置
+        theme时，application的theme起作用，在style中设置了AppTheme的
+        parent为Theme.AppCompat.NoActionBar，即继承该Theme的基本样式的基础上
+        继续自己定义样式。
+        -->
+        <activity android:name="com.legolas.activity.LoginActivity">
+            <!--提示找不到android.support.v7.internal.app.WindowDecorActionBar错误时
+            在style中的Theme的parent值前加上Base前缀，即可解决-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.legolas.activity.MainActivity">
+            </activity>
+        <activity android:name=".PatrolWorkerActivity">
+        </activity>
+        <activity
+            android:name=".PatrolAdministratorActivity">
+        </activity>
+        <activity
+            android:name=".OnDutyActivity">
+        </activity>
+        <activity
+            android:name=".FixWorkerActivity">
+        </activity>
+        <activity
+            android:name=".FixAdministratorActivity">
+        </activity>
+        <activity
+            android:name=".FixDetailActivity">
+        </activity>
+        <activity
+            android:name=".PatrolDetailActivity">
+        </activity>
+        <activity
+            android:name=".ContractsActivity">
+        </activity>
+        <activity
+            android:name=".OnDutyWorkerActivity">
+        </activity>
+        <activity
+            android:name=".BatteryWorkerActivity">
+        </activity>
+        <activity
+            android:name=".DutyLogWorkerActivity">
+        </activity>
+        <activity
+            android:name=".SignContractsWorkerActivity">
+        </activity>
+        <activity
+            android:name=".ContractsWorkerActivity">
+        </activity>
+        <activity
+            android:name=".OnDutyAdministratorActivity">
+        </activity>
+        <activity
+            android:name=".OnDutyDetailActivity">
+        </activity>
+        <activity
+            android:name=".BatteryAdministratorActivity">
+        </activity>
+        <activity
+            android:name=".BatteryDetailActivity">
+        </activity>
+        <activity
+            android:name=".DutyLogAdministratorActivity">
+        </activity>
+        <activity
+            android:name=".DutyLogDetailActivity">
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>

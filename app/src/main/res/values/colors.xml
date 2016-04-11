@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    <!-- 70%透明度 -->
+    <color name="sevenalpha">#AF000000</color>
+    <!-- 黑色 -->
+    <color name="black">#000000</color>
+    <!-- 白色 -->
+    <color name="white">#FFFFFF</color>
+    <!-- 浅灰色 -->
+    <color name="lightgrey">#C4C4C4</color>
+    <!-- 灰色 -->
+    <color name="grey">#999999</color>
+    <!-- 深灰色 -->
+    <color name="darkgrey">#D1D1D1</color>
+    <!-- 绿色 -->
+    <color name="green">#218868</color>
+    <!-- 海绿色 -->
+    <color name="lightgreen">#6db237</color>
+    <!-- 暗灰色 -->
+    <color name="dimgrey">#696969</color>
+    <!-- 灰色 -->
+    <color name="gray">#808080</color>
+    <!-- 雪白色 -->
+    <color name="floralwhite">#FFFAF0</color>
+    <!-- 红色 -->
+    <color name="red">#de1818</color>
+    <!--橙色-->
+    <color name="orange">#FF6600</color>
+    <!--土色-->
+    <color name="ashen">#996633</color>
+    <!--src蓝-->
+    <color name = "srcBlue">#337AB7</color>
+</resources>

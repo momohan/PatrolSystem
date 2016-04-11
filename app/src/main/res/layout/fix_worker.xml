@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/floralwhite">
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        >
+        <TextView
+            android:id="@+id/backTV"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:background="@drawable/tabck_selector"
+            android:text="返回"
+            android:textSize="18.0dip" />
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:background="@color/green"
+            android:text="维修单填写"
+            android:textSize="22.0dip" />
+        <TextView
+            android:id="@+id/submitTV"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:background="@drawable/tabck_selector"
+            android:text="提交"
+            android:textSize="15.0dip" />
+
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/duty_SV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="报修部门    "/>
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/apartmentACTV"
+                    android:completionThreshold="1"
+                    style="@style/CommonEditText" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="报修人编号"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/workerIdET"
+                    style="@style/CommonEditText" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="确认人编号"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/administratorIdET"
+                    style="@style/CommonEditText" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="报修时间    "/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/reportDateTV"
+                    style="@style/CommonEditText"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="接单时间    "/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/receiveDateTV"
+                    style="@style/CommonEditText"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="完成时间    "/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/finishDateTV"
+                    style="@style/CommonEditText"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="维修地点    "/>
+
+                <EditText
+                    android:id="@+id/areaET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    style="@style/CommonEditText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="联系电话    "/>
+
+                <EditText
+                    android:id="@+id/telET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/CommonEditText" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="接单人        "/>
+
+                <EditText
+                    android:id="@+id/receivePersonET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/CommonEditText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="维修工       "/>
+
+                <EditText
+                    android:id="@+id/fixPersonET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/CommonEditText" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="维修材料    "/>
+
+                <EditText
+                    android:id="@+id/fixMaterialET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/CommonEditText" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="报修内容    "/>
+
+                <EditText
+                    android:id="@+id/reportContentET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="true"
+                    android:inputType="textMultiLine"
+                    android:gravity="top"
+                    android:minLines="3"
+                    android:maxLines="5"
+                    android:scrollbars="vertical"
+                    style="@style/CommonEditText"
+                    android:background="@android:drawable/edit_text"
+                    >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="维修情况    "/>
+
+                <EditText
+                    android:id="@+id/fixConditionET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:minLines="3"
+                    android:maxLines="5"
+                    android:scrollbars="vertical"
+                    style="@style/CommonEditText"
+                    android:background="@android:drawable/edit_text"
+                    >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="未完成原因"/>
+
+                <EditText
+                    android:id="@+id/unfinishedReasonET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:minLines="3"
+                    android:maxLines="5"
+                    android:scrollbars="vertical"
+                    style="@style/CommonEditText"
+                    android:background="@android:drawable/edit_text"
+                    >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="部门评价   "/>
+
+                <EditText
+                    android:id="@+id/apartmentCommentET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:minLines="3"
+                    android:maxLines="5"
+                    android:scrollbars="vertical"
+                    style="@style/CommonEditText"
+                    android:background="@android:drawable/edit_text"
+                    >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="备注            "/>
+
+                <EditText
+                    android:id="@+id/remarkET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="true"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:minLines="3"
+                    android:maxLines="5"
+                    android:scrollbars="vertical"
+                    style="@style/CommonEditText"
+                    android:background="@android:drawable/edit_text"
+                    >
+                </EditText>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

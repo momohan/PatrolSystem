@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/floralwhite"
+    android:paddingBottom="10dp">
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        >
+        <TextView
+            android:id="@+id/backTV"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:background="@drawable/tabck_selector"
+            android:text="返回"
+            android:textSize="18.0dip" />
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:background="@color/green"
+            android:text="报修维修记录详情"
+            android:textSize="22.0dip" />
+        <TextView
+            android:id="@+id/auditTV"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:background="@drawable/tabck_selector"
+            android:textSize="15.0dip" />
+
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/patrol_SV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="维修单编号:  "/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/idTV" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="报修部门：    "/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/apartmentTV"
+                   />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="报修时间：    "/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/reportDateTV"
+                   />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="接单时间：    "/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/receiveDateTV"
+                   />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="完成时间：    "/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/finishDateTV"
+                   />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="报修人编号:  "/>
+
+                <TextView android:id="@+id/workerIdTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   />
+
+            </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingTop="20dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            >
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="确认人编号:  "/>
+
+            <TextView android:id="@+id/administratorIdTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="维修地点：    "/>
+
+                <TextView android:id="@+id/areaTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="联系电话：    "/>
+
+                <TextView android:id="@+id/telTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="接单人：        "/>
+
+                <TextView android:id="@+id/receivePersonTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="维修工：        "/>
+
+                <TextView android:id="@+id/fixPersonTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="维修材料       "/>
+
+                <TextView android:id="@+id/fixMaterialTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="报修内容       "/>
+
+                <TextView android:id="@+id/reportContentTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="维修情况       "/>
+
+                <TextView android:id="@+id/fixConditionTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="未完成原因"/>
+
+                <TextView android:id="@+id/unfinishedReasonTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="部门评价   "/>
+
+                <TextView android:id="@+id/apartmentCommentTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="备注                  "/>
+
+                <TextView android:id="@+id/remarkTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

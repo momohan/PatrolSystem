@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@mipmap/login"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="剧"
+        android:textSize="40dp"
+        android:textColor="@color/white"
+        android:id="@+id/title1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="院"
+        android:textSize="40dp"
+        android:textColor="@color/white"
+        android:id="@+id/title2"
+        android:layout_toRightOf="@id/title1"
+        android:layout_alignTop="@id/title1"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="暖通巡检系统"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:id="@+id/title3"
+        android:layout_toRightOf="@id/title2"
+        android:layout_alignBottom="@id/title2"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户名"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:id="@+id/user"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40dp"/>
+
+    <EditText
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:textSize="20sp"
+        android:maxLines="1"
+        android:id="@+id/userET"
+        android:textColor="@color/black"
+        android:background="@drawable/white_bg"
+        android:layout_alignTop="@id/user"
+        android:layout_alignLeft="@id/title3"
+        android:layout_alignStart="@id/title3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密  码"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:id="@+id/pwd"
+        android:layout_below="@id/user"
+        android:layout_marginLeft="40dp"/>
+
+    <EditText
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:textSize="20sp"
+        android:id="@+id/pwdET"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:background="@drawable/white_bg"
+        android:layout_alignTop="@id/pwd"
+        android:layout_alignLeft="@id/title3"
+        android:layout_alignStart="@id/title3" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pwd"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:id="@+id/loginRG">
+        <RadioButton
+            android:checked="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20dp"
+            android:id="@+id/worker"
+            android:text="工作人员"/>
+        <RadioButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/administrator"
+        android:text="管理员"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="登陆"
+        android:id="@+id/loginBT"
+        android:background="@drawable/white_selector"
+        android:layout_below="@id/loginRG"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>

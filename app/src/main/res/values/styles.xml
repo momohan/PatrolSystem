@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/black</item><!--定义全局字体默认为黑色-->
+    </style>
+    <style name="CommonEditText">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/edittext_shape</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="SearchEditText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/searchet_shape</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name = "hr">
+        <item name = "android:layout_height">match_parent</item>
+        <item name ="android:textColor">@color/black</item>
+        <item name = "android:background">@mipmap/hr</item>
+        </style>
+</resources>

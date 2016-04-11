@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/floralwhite">
+    <LinearLayout
+        android:id="@+id/titleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        android:background="@color/green"
+        >
+        <TextView
+            android:id="@+id/backTV"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="返回"
+            android:textSize="18.0dip" />
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="合同选项"
+            android:paddingRight="40dp"
+            android:textSize="22.0dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/signContractsIV"
+                android:src="@mipmap/demo"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="签订合同"
+                android:id="@+id/textView1"
+                android:textColor="@color/black"
+                android:layout_below="@id/signContractsIV"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contractsIV"
+                android:src="@mipmap/demo"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="制作合同呈批件"
+                android:textColor="@color/black"
+                android:id="@+id/textView2"
+                android:layout_below="@id/contractsIV"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

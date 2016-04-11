@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/floralwhite"
+    android:paddingBottom="10dp">
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        >
+        <TextView
+            android:id="@+id/backTV"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:background="@drawable/tabck_selector"
+            android:text="返回"
+            android:textSize="18.0dip" />
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:background="@color/green"
+            android:text="值班日志记录详情"
+            android:textSize="22.0dip" />
+        <TextView
+            android:id="@+id/auditTV"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:background="@drawable/tabck_selector"
+            android:textSize="15.0dip" />
+
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/patrol_SV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/idTV" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="值班人编号："/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/workerTV"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="负责人编号："/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/administratorTV"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="值班地点：    "/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/areaTV" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="班次：            "/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/shiftTV"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="日期：            "/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dateTV"
+                    />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="值班内容：    "/>
+
+                <TextView android:id="@+id/contentTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="交接事宜：    "/>
+                <TextView android:id="@+id/affairsTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="工具交接：    "/>
+                <TextView android:id="@+id/equipTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="备注：            "/>
+                <TextView android:id="@+id/remarkTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/floralwhite">
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        >
+        <TextView
+            android:id="@+id/backTV"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:background="@drawable/tabck_selector"
+            android:text="返回"
+            android:textSize="18.0dip" />
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:background="@color/green"
+            android:text="值班日志登记"
+            android:textSize="22.0dip" />
+        <TextView
+            android:id="@+id/submitTV"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:background="@drawable/tabck_selector"
+            android:text="提交"
+            android:textSize="15.0dip" />
+
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/patrol_SV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="值班日期    "/>
+
+                <TextView android:id="@+id/dateTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/CommonEditText" />
+
+
+            </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            >
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="班次            "/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/shiftET"
+                android:maxLines="1"
+                style="@style/CommonEditText" />
+        </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="值班地点    "/>
+
+                <EditText android:id="@+id/areaET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/CommonEditText"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="记录人编号"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/workerIdET"
+                    style="@style/CommonEditText"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="负责人编号"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/administratorIdET"
+                    style="@style/CommonEditText"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="报修内容    "/>
+
+                <EditText
+                    android:id="@+id/contentET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="true"
+                    android:inputType="textMultiLine"
+                    android:gravity="top"
+                    android:minLines="3"
+                    android:maxLines="5"
+                    android:scrollbars="vertical"
+                    style="@style/CommonEditText"
+                    android:background="@android:drawable/edit_text"
+                    >
+                </EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="交接事宜    "/>
+
+                <EditText
+                    android:id="@+id/affairsET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="true"
+                    android:inputType="textMultiLine"
+                    android:gravity="top"
+                    android:minLines="3"
+                    android:maxLines="5"
+                    android:scrollbars="vertical"
+                    style="@style/CommonEditText"
+                    android:background="@android:drawable/edit_text"
+                    >
+                </EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="备注            "/>
+
+                <EditText
+                    android:id="@+id/remarkET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="true"
+                    android:inputType="textMultiLine"
+                    android:gravity="top"
+                    android:minLines="3"
+                    android:maxLines="5"
+                    android:scrollbars="vertical"
+                    style="@style/CommonEditText"
+                    android:background="@android:drawable/edit_text"
+                    >
+                </EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="工具交接    "/>
+
+                <EditText
+                    android:id="@+id/equipET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="true"
+                    android:inputType="textMultiLine"
+                    android:gravity="top"
+                    android:minLines="3"
+                    android:maxLines="5"
+                    android:scrollbars="vertical"
+                    style="@style/CommonEditText"
+                    android:background="@android:drawable/edit_text"
+                    >
+                </EditText>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>
